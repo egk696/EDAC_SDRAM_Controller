@@ -1,0 +1,1 @@
+-wto "9ff195710ac449118155d0ded5540e57" --incr --debug "typical" --rangecheck --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "avs_testbench_wrapper_func_synth" "xil_defaultlib.avs_testbench_wrapper" -log "elaborate.log" 

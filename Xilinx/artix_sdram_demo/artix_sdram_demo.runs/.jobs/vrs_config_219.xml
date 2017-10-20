@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="avs_testbench_axi_amm_bridge_0_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/avs_testbench_axi_amm_bridge_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_xlconstant_0_2_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_xlconstant_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_axi_amm_bridge_0_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_amm_bridge_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_clk_wiz_1_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_lmb_bram_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_ilmb_v10_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_dlmb_v10_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_microblaze_0_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_xbar_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_mdm_1_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="avs_testbench_axi_amm_bridge_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_xlconstant_0_2_synth_1"/>
+		<Parent Id="DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_axi_amm_bridge_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="DemoSDRAM_clk_wiz_1_0_synth_1"/>
+		<Parent Id="DemoSDRAM_lmb_bram_0_synth_1"/>
+		<Parent Id="DemoSDRAM_ilmb_v10_0_synth_1"/>
+		<Parent Id="DemoSDRAM_dlmb_v10_0_synth_1"/>
+		<Parent Id="DemoSDRAM_microblaze_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_xbar_0_synth_1"/>
+		<Parent Id="DemoSDRAM_mdm_1_0_synth_1"/>
+		<Parent Id="DemoSDRAM_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="DemoSDRAM_dlmb_bram_if_cntlr_0_synth_1"/>
+	</Run>
+</Runs>
+

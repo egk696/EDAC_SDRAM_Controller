@@ -1,0 +1,930 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Oct 20 01:59:40 2017
+# Process ID: 10656
+# Current directory: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1
+# Command line: vivado.exe -log DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.tcl
+# Log file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.vds
+# Journal file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.tcl -notrace
+Command: synth_design -top DemoSDRAM_sdram_ctrl_tmr_avalon_0_0 -part xc7a200tfbg676-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4680 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:01:03 . Memory (MB): peak = 326.074 ; gain = 116.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DemoSDRAM_sdram_ctrl_tmr_avalon_0_0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0/synth/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.vhd:85]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'sdram_ctrl_tmr_avs_interface' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:22' bound to instance 'U0' of component 'sdram_ctrl_tmr_avs_interface' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0/synth/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'sdram_ctrl_tmr_avs_interface' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:81]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+WARNING: [Synth 8-614] signal 'current_ctrl_state' is read in the process but is not in the sensitivity list [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:230]
+WARNING: [Synth 8-614] signal 'current_rd_data' is read in the process but is not in the sensitivity list [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:230]
+WARNING: [Synth 8-614] signal 'csi_clock' is read in the process but is not in the sensitivity list [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:251]
+WARNING: [Synth 8-614] signal 'wr_req_int' is read in the process but is not in the sensitivity list [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:251]
+WARNING: [Synth 8-614] signal 'cpu_rw_addr_int' is read in the process but is not in the sensitivity list [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:251]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'sdram_ctrl_tmr_top' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:21' bound to instance 'sdram_ctrl_tmr_inst' of component 'sdram_ctrl_tmr_top' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'sdram_ctrl_tmr_top' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:85]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter COLS_LIMIT bound to: 512 - type: integer 
+	Parameter ROWS_LIMIT bound to: 8192 - type: integer 
+	Parameter BANKS_LIMIT bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'tmr_address_mask' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_address_mask.vhd:6' bound to instance 'tmr_address_mask_inst' of component 'tmr_address_mask' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'tmr_address_mask' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_address_mask.vhd:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter COLS_LIMIT bound to: 512 - type: integer 
+	Parameter ROWS_LIMIT bound to: 8192 - type: integer 
+	Parameter BANKS_LIMIT bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'tmr_address_mask' (1#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_address_mask.vhd:23]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'sdram_ctrl_tmr_scrubber' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_scrubber.vhd:19' bound to instance 'sdram_ctrl_tmr_scrubber_inst' of component 'sdram_ctrl_tmr_scrubber' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'sdram_ctrl_tmr_scrubber' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_scrubber.vhd:46]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter SCRUBBER_WAIT_CYCLES bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sdram_ctrl_tmr_scrubber' (2#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_scrubber.vhd:46]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+INFO: [Synth 8-3491] module 'sdram_ctrl_tmr_healer' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_healer.vhd:19' bound to instance 'sdram_ctrl_tmr_healer_inst' of component 'sdram_ctrl_tmr_healer' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:354]
+INFO: [Synth 8-638] synthesizing module 'sdram_ctrl_tmr_healer' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_healer.vhd:50]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sdram_ctrl_tmr_healer' (3#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_healer.vhd:50]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'tmr_voter' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_voter.vhd:20' bound to instance 'tmr_voter_inst' of component 'tmr_voter' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'tmr_voter' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_voter.vhd:35]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter GEN_ERR_INJ bound to: 0 - type: bool 
+INFO: [Synth 8-256] done synthesizing module 'tmr_voter' (4#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/tmr_voter.vhd:35]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+INFO: [Synth 8-3491] module 'sdram_ctrl_tmr' declared at 'c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:23' bound to instance 'sdram_ctrl_inst' of component 'sdram_ctrl_tmr' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:397]
+INFO: [Synth 8-638] synthesizing module 'sdram_ctrl_tmr' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:80]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DQM_WIDTH bound to: 2 - type: integer 
+	Parameter ROW_WIDTH bound to: 13 - type: integer 
+	Parameter COLS_WIDTH bound to: 9 - type: integer 
+	Parameter BANK_WIDTH bound to: 2 - type: integer 
+	Parameter NOP_BOOT_CYCLES bound to: 20000 - type: integer 
+	Parameter REF_PERIOD bound to: 32 - type: integer 
+	Parameter REF_COMMAND_COUNT bound to: 8 - type: integer 
+	Parameter REF_COMMAND_PERIOD bound to: 8 - type: integer 
+	Parameter PRECH_COMMAND_PERIOD bound to: 2 - type: integer 
+	Parameter ACT_TO_RW_CYCLES bound to: 2 - type: integer 
+	Parameter IN_DATA_TO_PRE bound to: 2 - type: integer 
+	Parameter CAS_LAT_CYCLES bound to: 2 - type: integer 
+	Parameter MODE_REG_CYCLES bound to: 2 - type: integer 
+	Parameter BURST_LENGTH bound to: 0 - type: integer 
+	Parameter DRIVE_STRENGTH bound to: 0 - type: integer 
+	Parameter RAM_COLS bound to: 512 - type: integer 
+	Parameter RAM_ROWS bound to: 8192 - type: integer 
+	Parameter RAM_BANKS bound to: 4 - type: integer 
+	Parameter TMR_COLS bound to: 384 - type: integer 
+	Parameter EXT_MODE_REG_EN bound to: 1 - type: bool 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'cke_buf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:935]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:938]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:938]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:942]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'cs_buf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:945]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'ras_buf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:947]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'cas_buf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:949]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'we_buf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:951]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:954]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'obuf_inst' to cell 'OBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:954]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'iobuf_inst' to cell 'IOBUF' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:960]
+INFO: [Synth 8-256] done synthesizing module 'sdram_ctrl_tmr' (5#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'sdram_ctrl_tmr_top' (6#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/sdram_ctrl_tmr_top.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'sdram_ctrl_tmr_avs_interface' (7#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'DemoSDRAM_sdram_ctrl_tmr_avalon_0_0' (8#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0/synth/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.vhd:85]
+WARNING: [Synth 8-3331] design tmr_voter has unconnected port clk_i
+WARNING: [Synth 8-3331] design tmr_voter has unconnected port en_err_test_i
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_top has unconnected port en_err_test_i
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[31]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[30]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[29]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[28]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[27]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[26]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[25]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[24]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[23]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[22]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[21]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[20]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[19]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[18]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[17]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:01:16 . Memory (MB): peak = 367.012 ; gain = 157.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:01:17 . Memory (MB): peak = 367.012 ; gain = 157.230
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 701.168 ; gain = 0.133
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:02:58 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:02:58 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:02:58 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "scrubbing_state_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scrubbing_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_scrub_wait_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "healing_state_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_healing_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'sdram_ctrl_tmr'
+INFO: [Synth 8-5545] ROM "ctrl_state_o" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "next_nop_boot_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_auto_ref_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_precharge_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_act_to_rw_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_cas_rd_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_nop_wr_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "next_rd_tmr_vote" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_rd_tmr_vote" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_address_bus" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_dqm" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "next_mem_ready" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_rd_grnt" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "next_wr_buffer" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "rst_err_counter_int" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'avs_waitrequest_reg' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:262]
+WARNING: [Synth 8-327] inferring latch for variable 'avs_readdatavalid_reg' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/b290/xilinx/sdram_ctrl_tmr_avs_interface.vhd:263]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:03:01 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	  16 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 5     
++---Registers : 
+	               27 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               15 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  28 Input     27 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input     23 Bit        Muxes := 1     
+	   5 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	  28 Input     16 Bit        Muxes := 4     
+	   2 Input     15 Bit        Muxes := 9     
+	  28 Input     15 Bit        Muxes := 2     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  28 Input      4 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	  28 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 37    
+	  28 Input      1 Bit        Muxes := 33    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sdram_ctrl_tmr_scrubber 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 2     
+Module sdram_ctrl_tmr_healer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module tmr_voter 
+Detailed RTL Component Info : 
++---Adders : 
+	  16 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module sdram_ctrl_tmr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	  28 Input     27 Bit        Muxes := 2     
+	   4 Input     23 Bit        Muxes := 1     
+	   5 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  28 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 9     
+	  28 Input     15 Bit        Muxes := 2     
+	   3 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	  28 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	  28 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 33    
+	   2 Input      1 Bit        Muxes := 29    
+Module sdram_ctrl_tmr_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module sdram_ctrl_tmr_avs_interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "sdram_ctrl_inst/next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdram_ctrl_inst/next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdram_ctrl_inst/next_address_bus" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_nop_boot_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "sdram_ctrl_inst/next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_precharge_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_auto_ref_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_mem_ready" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_act_to_rw_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_cas_rd_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_nop_wr_count" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_rd_grnt" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/ctrl_state_o" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sdram_ctrl_inst/next_wr_buffer" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design tmr_voter has unconnected port clk_i
+WARNING: [Synth 8-3331] design tmr_voter has unconnected port en_err_test_i
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_top has unconnected port en_err_test_i
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[31]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[30]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[29]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[28]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[27]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[26]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[25]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[24]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[23]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[22]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[21]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[20]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[19]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[18]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[17]
+WARNING: [Synth 8-3331] design sdram_ctrl_tmr_avs_interface has unconnected port avs_writedata[16]
+INFO: [Synth 8-3886] merging instance 'U0/current_en_scrubbing_reg[0]' (FDP) to 'U0/current_en_scrubbing_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/current_en_scrubbing_reg[1]' (FDP) to 'U0/current_en_scrubbing_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[0]' (FDPE) to 'U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/sdram_ctrl_tmr_inst/\sdram_ctrl_inst/current_cs_reg )
+WARNING: [Synth 8-3332] Sequential element (sdram_ctrl_inst/current_precharge_count_reg[1]) is unused and will be removed from module sdram_ctrl_tmr_top.
+WARNING: [Synth 8-3332] Sequential element (sdram_ctrl_inst/current_act_to_rw_count_reg[1]) is unused and will be removed from module sdram_ctrl_tmr_top.
+WARNING: [Synth 8-3332] Sequential element (sdram_ctrl_inst/current_nop_wr_count_reg[1]) is unused and will be removed from module sdram_ctrl_tmr_top.
+WARNING: [Synth 8-3332] Sequential element (sdram_ctrl_inst/current_cs_reg) is unused and will be removed from module sdram_ctrl_tmr_top.
+WARNING: [Synth 8-3332] Sequential element (current_scrub_col_index_reg[1]) is unused and will be removed from module sdram_ctrl_tmr_scrubber.
+WARNING: [Synth 8-3332] Sequential element (current_scrub_col_index_reg[0]) is unused and will be removed from module sdram_ctrl_tmr_scrubber.
+WARNING: [Synth 8-3332] Sequential element (sdram_ctrl_inst/current_auto_ref_count_reg[3]) is unused and will be removed from module sdram_ctrl_tmr_top.
+WARNING: [Synth 8-3332] Sequential element (current_scrub_wait_count_reg[6]) is unused and will be removed from module sdram_ctrl_tmr_scrubber.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:03:13 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:03:41 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:03:41 . Memory (MB): peak = 701.168 ; gain = 491.387
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:03:42 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    13|
+|2     |LUT1   |    33|
+|3     |LUT2   |    85|
+|4     |LUT3   |   162|
+|5     |LUT4   |    99|
+|6     |LUT5   |   116|
+|7     |LUT6   |   333|
+|8     |FDCE   |   180|
+|9     |FDPE   |    13|
+|10    |FDRE   |    84|
+|11    |FDSE   |     1|
+|12    |LDC    |     2|
+|13    |IOBUF  |    16|
+|14    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-----------------------------+------+
+|      |Instance                           |Module                       |Cells |
++------+-----------------------------------+-----------------------------+------+
+|1     |top                                |                             |  1159|
+|2     |  U0                               |sdram_ctrl_tmr_avs_interface |  1159|
+|3     |    sdram_ctrl_tmr_inst            |sdram_ctrl_tmr_top           |  1053|
+|4     |      sdram_ctrl_tmr_scrubber_inst |sdram_ctrl_tmr_scrubber      |   100|
+|5     |      sdram_ctrl_tmr_healer_inst   |sdram_ctrl_tmr_healer        |    72|
+|6     |      tmr_voter_inst               |tmr_voter                    |    55|
+|7     |      sdram_ctrl_inst              |sdram_ctrl_tmr               |   823|
++------+-----------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:26 . Memory (MB): peak = 710.613 ; gain = 130.020
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:03:43 . Memory (MB): peak = 710.613 ; gain = 500.832
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+124 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:03:07 . Memory (MB): peak = 710.613 ; gain = 466.250
+INFO: [Common 17-1381] The checkpoint 'C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 710.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 02:03:58 2017...

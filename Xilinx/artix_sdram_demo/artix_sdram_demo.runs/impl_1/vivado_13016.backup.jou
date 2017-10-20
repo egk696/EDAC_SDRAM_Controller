@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Sep 19 13:44:46 2017
+# Process ID: 13016
+# Current directory: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1
+# Command line: vivado.exe -log DemoSDRAM_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DemoSDRAM_wrapper.tcl -notrace
+# Log file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.vdi
+# Journal file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_wrapper.tcl -notrace

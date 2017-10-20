@@ -1,0 +1,58 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port cas_o -pg 1 -y 10 -defaultsOSRD
+preplace port cke_o -pg 1 -y -90 -defaultsOSRD
+preplace port err_detect_o -pg 1 -y 110 -defaultsOSRD
+preplace port cs_o -pg 1 -y -30 -defaultsOSRD
+preplace port core_ext_start -pg 1 -y 100 -defaultsOSRD
+preplace port reset_rtl -pg 1 -y -240 -defaultsOSRD
+preplace port we_o -pg 1 -y 30 -defaultsOSRD
+preplace port clk_100MHz -pg 1 -y -220 -defaultsOSRD
+preplace port mem_ready_o -pg 1 -y 90 -defaultsOSRD
+preplace port healing_proc_run_o -pg 1 -y 190 -defaultsOSRD
+preplace port ras_o -pg 1 -y -10 -defaultsOSRD
+preplace port scrubbing_proc_run_o -pg 1 -y 170 -defaultsOSRD
+preplace portBus voted_data_o -pg 1 -y 150 -defaultsOSRD
+preplace portBus bank_o -pg 1 -y -70 -defaultsOSRD
+preplace portBus dataQ_io -pg 1 -y 70 -defaultsOSRD
+preplace portBus err_counter_o -pg 1 -y 130 -defaultsOSRD
+preplace portBus dqm_o -pg 1 -y 50 -defaultsOSRD
+preplace portBus addr_o -pg 1 -y -50 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 0 -defaultsOSRD
+preplace inst rst_clk_100MHz_100M -pg 1 -lvl 2 -y -150 -defaultsOSRD
+preplace inst sdram_ctrl_tmr_avalon_0 -pg 1 -lvl 4 -y 50 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 2 -y 80 -defaultsOSRD
+preplace inst axi_traffic_gen_0_axi_periph -pg 1 -lvl 3 -y -130 -defaultsOSRD
+preplace inst axi_amm_bridge_0 -pg 1 -lvl 3 -y 60 -defaultsOSRD
+preplace netloc core_ext_start_1 1 0 2 N 100 N
+preplace netloc rst_clk_100MHz_100M_interconnect_aresetn 1 2 1 490
+preplace netloc sdram_ctrl_tmr_avalon_0_voted_data_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_err_detect_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_cas_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_mem_ready_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_ras_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_cke_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_healing_proc_run_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_cs_o 1 4 1 N
+preplace netloc axi_traffic_gen_0_axi_periph_M00_AXI 1 2 2 530 -250 790J
+preplace netloc axi_traffic_gen_0_M_AXI 1 2 1 520
+preplace netloc xlconstant_0_dout 1 1 1 160
+preplace netloc sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o 1 4 1 N
+preplace netloc axi_amm_bridge_0_M_AVALON 1 3 1 790
+preplace netloc Net 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_addr_o 1 4 1 N
+preplace netloc rst_clk_100MHz_100M_peripheral_aresetn 1 1 2 150 150 510
+preplace netloc sdram_ctrl_tmr_avalon_0_err_counter_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_dqm_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_we_o 1 4 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_bank_o 1 4 1 N
+preplace netloc reset_rtl_1 1 0 4 N -240 140J -270 NJ -270 800
+preplace netloc clk_100MHz_1 1 0 4 10 60 150 -240 500 130 790
+levelinfo -pg 1 -10 80 330 660 930 1140 -top -280 -bot 370
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_board_cnt: "1",
+}

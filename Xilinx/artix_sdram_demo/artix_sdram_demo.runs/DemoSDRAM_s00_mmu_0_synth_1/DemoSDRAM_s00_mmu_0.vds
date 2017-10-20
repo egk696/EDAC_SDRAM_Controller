@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Oct 20 02:43:31 2017
+# Process ID: 1296
+# Current directory: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_s00_mmu_0_synth_1
+# Command line: vivado.exe -log DemoSDRAM_s00_mmu_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoSDRAM_s00_mmu_0.tcl
+# Log file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_s00_mmu_0_synth_1/DemoSDRAM_s00_mmu_0.vds
+# Journal file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_s00_mmu_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_s00_mmu_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 333.137 ; gain = 123.051
+INFO: [Synth 8-638] synthesizing module 'DemoSDRAM_s00_mmu_0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_s00_mmu_0/synth/DemoSDRAM_s00_mmu_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_mmu_v2_1_9_top' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+INFO: [Synth 8-638] synthesizing module 'axi_mmu_v2_1_9_addr_decoder' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-256] done synthesizing module 'axi_mmu_v2_1_9_addr_decoder' (1#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-638] synthesizing module 'axi_mmu_v2_1_9_decerr_slave' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+INFO: [Synth 8-256] done synthesizing module 'axi_mmu_v2_1_9_decerr_slave' (2#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:201]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (3#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (4#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' (4#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' (4#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' (4#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (5#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' (6#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_mmu_v2_1_9_top' (7#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/a2d8/hdl/axi_mmu_v2_1_vl_rfs.v:557]
+INFO: [Synth 8-256] done synthesizing module 'DemoSDRAM_s00_mmu_0' (8#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_s00_mmu_0/synth/DemoSDRAM_s00_mmu_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 371.555 ; gain = 161.469
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 371.555 ; gain = 161.469
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 713.645 ; gain = 0.004
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:00 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:01:02 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     8|
+|2     |LUT2 |     8|
+|3     |LUT3 |    49|
+|4     |LUT4 |    24|
+|5     |LUT5 |    12|
+|6     |LUT6 |    23|
+|7     |FDRE |   105|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 713.645 ; gain = 503.559
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 713.645 ; gain = 465.910

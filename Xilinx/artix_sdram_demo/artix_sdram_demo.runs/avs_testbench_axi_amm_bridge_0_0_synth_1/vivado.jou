@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 27 16:13:36 2017
+# Process ID: 5384
+# Current directory: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/avs_testbench_axi_amm_bridge_0_0_synth_1
+# Command line: vivado.exe -log avs_testbench_axi_amm_bridge_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source avs_testbench_axi_amm_bridge_0_0.tcl
+# Log file: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/avs_testbench_axi_amm_bridge_0_0_synth_1/avs_testbench_axi_amm_bridge_0_0.vds
+# Journal file: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/avs_testbench_axi_amm_bridge_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source avs_testbench_axi_amm_bridge_0_0.tcl -notrace

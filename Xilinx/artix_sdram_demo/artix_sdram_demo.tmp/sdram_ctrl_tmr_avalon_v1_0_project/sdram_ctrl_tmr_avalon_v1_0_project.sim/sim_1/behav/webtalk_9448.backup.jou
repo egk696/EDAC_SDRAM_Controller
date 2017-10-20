@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Jul 08 13:36:54 2017
+# Process ID: 9448
+# Current directory: d:/development/seud-mist/seud/4_sdrtmrcontroller/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source d:/development/seud-mist/seud/4_sdrtmrcontroller/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav/xsim.dir/sdram_ctrl_tmr_avs_interface_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: d:/development/seud-mist/seud/4_sdrtmrcontroller/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav/webtalk.log
+# Journal file: d:/development/seud-mist/seud/4_sdrtmrcontroller/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source d:/development/seud-mist/seud/4_sdrtmrcontroller/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav/xsim.dir/sdram_ctrl_tmr_avs_interface_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DemoSDRAM_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DemoSDRAM_wrapper" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lmb_bram_if_funcs" />
+            <top_module name="mdm_funcs" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1494694000fs"></ZoomStartTime>
+      <ZoomEndTime time="4061494694001fs"></ZoomEndTime>
+      <Cursor1Time time="1886494694000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wave_markers>
+      <marker time="1417494694000" label="" />
+   </wave_markers>
+   <wvobject type="divider" fp_name="divider36">
+      <obj_property name="label">SDRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/clk_shared" type="logic">
+      <obj_property name="ElementShortName">clk_shared</obj_property>
+      <obj_property name="ObjectShortName">clk_shared</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/addr_o" type="array">
+      <obj_property name="ElementShortName">addr_o[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_o[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/bank_o" type="array">
+      <obj_property name="ElementShortName">bank_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bank_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/cs_o" type="logic">
+      <obj_property name="ElementShortName">cs_o</obj_property>
+      <obj_property name="ObjectShortName">cs_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/ras_o" type="logic">
+      <obj_property name="ElementShortName">ras_o</obj_property>
+      <obj_property name="ObjectShortName">ras_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/cas_o" type="logic">
+      <obj_property name="ElementShortName">cas_o</obj_property>
+      <obj_property name="ObjectShortName">cas_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/we_o" type="logic">
+      <obj_property name="ElementShortName">we_o</obj_property>
+      <obj_property name="ObjectShortName">we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/cke_o" type="logic">
+      <obj_property name="ElementShortName">cke_o</obj_property>
+      <obj_property name="ObjectShortName">cke_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/dqm_o" type="array">
+      <obj_property name="ElementShortName">dqm_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dqm_o[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/dataQ_io" type="array">
+      <obj_property name="ElementShortName">dataQ_io[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dataQ_io[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/clk_sdram" type="logic">
+      <obj_property name="ElementShortName">clk_sdram</obj_property>
+      <obj_property name="ObjectShortName">clk_sdram</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/status_led" type="logic">
+      <obj_property name="ElementShortName">status_led</obj_property>
+      <obj_property name="ObjectShortName">status_led</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider46">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_mem_ready_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_mem_ready_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_mem_ready_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_detect_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_err_detect_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_err_detect_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_healing_proc_run_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_healing_proc_run_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_healing_proc_run_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_counter_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_err_counter_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_err_counter_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_voted_data_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_voted_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_voted_data_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider42">
+      <obj_property name="label">AVS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/axi_amm_bridge_0_avm_address" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">axi_amm_bridge_0_avm_address[23:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_address[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/axi_amm_bridge_0_avm_writedata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">axi_amm_bridge_0_avm_writedata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_writedata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/axi_amm_bridge_0_avm_write" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">axi_amm_bridge_0_avm_write</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_write</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/axi_amm_bridge_0_avm_read" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">axi_amm_bridge_0_avm_read</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_read</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_avs_waitrequest" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">sdram_ctrl_tmr_avalon_0_avs_waitrequest</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_avs_waitrequest</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider61">
+      <obj_property name="label">UBLAZE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Instr_Addr" type="array">
+      <obj_property name="ElementShortName">Instr_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr_Addr[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Instr[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Data_Addr" type="array">
+      <obj_property name="ElementShortName">Data_Addr[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Addr[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Data_Read" type="array">
+      <obj_property name="ElementShortName">Data_Read[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Read[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0/Data_Write" type="array">
+      <obj_property name="ElementShortName">Data_Write[0:31]</obj_property>
+      <obj_property name="ObjectShortName">Data_Write[0:31]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider96">
+      <obj_property name="label">LMB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/LMB_Clk" type="logic">
+      <obj_property name="ElementShortName">LMB_Clk</obj_property>
+      <obj_property name="ObjectShortName">LMB_Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/SYS_Rst" type="logic">
+      <obj_property name="ElementShortName">SYS_Rst</obj_property>
+      <obj_property name="ObjectShortName">SYS_Rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_abus" type="array">
+      <obj_property name="ElementShortName">ILMB_abus[0:31]</obj_property>
+      <obj_property name="ObjectShortName">ILMB_abus[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_addrstrobe" type="logic">
+      <obj_property name="ElementShortName">ILMB_addrstrobe</obj_property>
+      <obj_property name="ObjectShortName">ILMB_addrstrobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_ce" type="logic">
+      <obj_property name="ElementShortName">ILMB_ce</obj_property>
+      <obj_property name="ObjectShortName">ILMB_ce</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_readdbus" type="array">
+      <obj_property name="ElementShortName">ILMB_readdbus[0:31]</obj_property>
+      <obj_property name="ObjectShortName">ILMB_readdbus[0:31]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_readstrobe" type="logic">
+      <obj_property name="ElementShortName">ILMB_readstrobe</obj_property>
+      <obj_property name="ObjectShortName">ILMB_readstrobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_ready" type="logic">
+      <obj_property name="ElementShortName">ILMB_ready</obj_property>
+      <obj_property name="ObjectShortName">ILMB_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_ue" type="logic">
+      <obj_property name="ElementShortName">ILMB_ue</obj_property>
+      <obj_property name="ObjectShortName">ILMB_ue</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DemoSDRAM_wrapper/DemoSDRAM_i/microblaze_0_local_memory/ILMB_wait" type="logic">
+      <obj_property name="ElementShortName">ILMB_wait</obj_property>
+      <obj_property name="ObjectShortName">ILMB_wait</obj_property>
+   </wvobject>
+</wave_config>

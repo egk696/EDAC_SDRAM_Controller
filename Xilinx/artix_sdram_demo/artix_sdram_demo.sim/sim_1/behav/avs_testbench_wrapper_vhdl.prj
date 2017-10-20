@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ip/avs_testbench_sdram_ctrl_tmr_avalon_0_0/avs_testbench_sdram_ctrl_tmr_avalon_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ip/avs_testbench_axi_amm_bridge_0_0/avs_testbench_axi_amm_bridge_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ip/avs_testbench_axi_traffic_gen_0_0/avs_testbench_axi_traffic_gen_0_0_sim_netlist.vhdl"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ip/avs_testbench_rst_clk_100MHz_100M_0/sim/avs_testbench_rst_clk_100MHz_100M_0.vhd"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ipshared/e147/xlconstant.vhd"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/ip/avs_testbench_xlconstant_0_0/sim/avs_testbench_xlconstant_0_0.vhd"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.ip_user_files/bd/avs_testbench/hdl/avs_testbench.vhd"
+vhdl xil_defaultlib  "../../../artix_sdram_demo.srcs/sources_1/bd/avs_testbench/hdl/avs_testbench_wrapper.vhd"
+
+# Do not sort compile order
+nosort

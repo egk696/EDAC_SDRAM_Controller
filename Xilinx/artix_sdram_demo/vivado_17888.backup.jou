@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jul 03 22:29:16 2017
+# Process ID: 17888
+# Current directory: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19480 D:\Development\SEUD-MIST\SEUD\4_SDRTMRController\artix_sdram_demo\artix_sdram_demo.xpr
+# Log file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/vivado.log
+# Journal file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.xpr
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_err_counter_o] [get_bd_ports err_counter_o]
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_voted_data_o] [get_bd_ports voted_data_o]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_mem_ready_o] [get_bd_ports mem_ready_o]
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o] [get_bd_ports scrubbing_proc_run_o]
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_healing_proc_run_o] [get_bd_ports healing_proc_run_o]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+close_design
+open_run impl_1
+set_property is_loc_fixed true [get_ports [list  cas_o]]
+save_constraints -force
+place_ports cas_o E6
+set_property IOSTANDARD LVCMOS18 [get_ports [list cas_o]]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+file copy -force D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.sysdef D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.sdk/DemoSDRAM_wrapper.hdf
+
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+make_wrapper -files [get_files D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -top
+delete_bd_objs [get_bd_nets rst_clk_wiz_1_peripheral_aresetn] [get_bd_intf_nets microblaze_0_M_AXI_DP] [get_bd_intf_nets axi_clock_converter_0_M_AXI] [get_bd_cells axi_clock_converter_0]
+undo
+delete_bd_objs [get_bd_nets rst_clk_wiz_1_peripheral_aresetn] [get_bd_intf_nets microblaze_0_M_AXI_DP] [get_bd_intf_nets axi_clock_converter_0_M_AXI] [get_bd_cells axi_clock_converter_0]
+connect_bd_intf_net [get_bd_intf_pins microblaze_0/M_AXI_DP] [get_bd_intf_pins axi_amm_bridge_0/S_AXI_LITE]
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {12} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {12} CONFIG.CLKOUT3_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {64.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {64.000} CONFIG.MMCM_CLKOUT1_DIVIDE {64} CONFIG.MMCM_CLKOUT2_DIVIDE {64} CONFIG.MMCM_CLKOUT2_PHASE {0.000} CONFIG.CLKOUT1_JITTER {673.233} CONFIG.CLKOUT1_PHASE_ERROR {693.818} CONFIG.CLKOUT2_JITTER {673.233} CONFIG.CLKOUT2_PHASE_ERROR {693.818} CONFIG.CLKOUT3_JITTER {673.233} CONFIG.CLKOUT3_PHASE_ERROR {693.818}] [get_bd_cells clk_wiz_1]
+endgroup
+save_bd_design
+assign_bd_address
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.NOP_BOOT_CYCLES {20000} CONFIG.REF_PERIOD {32}] [get_bd_cells sdram_ctrl_tmr_avalon_0]
+endgroup
+save_bd_design
+make_wrapper -files [get_files D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+set_property name status_led [get_bd_ports err_detect_o]
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_err_detect_o]
+connect_bd_net [get_bd_ports status_led] [get_bd_pins sdram_ctrl_tmr_avalon_0/mem_ready_o]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+launch_sdk -workspace D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/blaze_src -hwspec D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.sdk/DemoSDRAM_wrapper.hdf
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_PROBE3_TYPE {1} CONFIG.C_PROBE2_TYPE {1} CONFIG.C_PROBE3_WIDTH {16} CONFIG.C_PROBE2_WIDTH {16} CONFIG.C_NUM_OF_PROBES {6} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_MONITOR_TYPE {Native} CONFIG.C_PROBE5_MU_CNT {2} CONFIG.C_PROBE4_MU_CNT {2} CONFIG.C_PROBE3_MU_CNT {2} CONFIG.C_PROBE2_MU_CNT {2} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2} CONFIG.C_ENABLE_ILA_AXI_MON {false}] [get_bd_cells ila_0]
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_1/clk_blaze] [get_bd_pins ila_0/clk]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/mem_ready_o] [get_bd_pins ila_0/probe0]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/err_detect_o] [get_bd_pins ila_0/probe1]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/err_counter_o] [get_bd_pins ila_0/probe2]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/voted_data_o] [get_bd_pins ila_0/probe3]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/scrubbing_proc_run_o] [get_bd_pins ila_0/probe4]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/healing_proc_run_o] [get_bd_pins ila_0/probe5]
+save_bd_design
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property CORE_REFRESH_RATE_MS 1 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"hw_ila_1"}]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+make_wrapper -files [get_files D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -top
+make_wrapper -files [get_files D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -top
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group "*" ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list DemoSDRAM_i/clk_wiz_1/inst/clk_ctrl ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[0]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[1]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[2]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[3]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[4]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[5]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[6]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[7]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[8]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[9]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[10]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[11]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[12]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[13]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[14]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/voted_data_o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[0]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[1]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[2]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[3]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[4]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[5]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[6]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[7]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[8]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[9]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[10]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[11]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[12]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[13]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[14]} {DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_counter_o[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/err_detect_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/mem_ready_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/scrubbing_proc_run_o ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/healing_proc_run_o ]]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_err_detect_o] [get_bd_nets sdram_ctrl_tmr_avalon_0_err_counter_o] [get_bd_nets sdram_ctrl_tmr_avalon_0_voted_data_o] [get_bd_nets sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o] [get_bd_nets sdram_ctrl_tmr_avalon_0_healing_proc_run_o] [get_bd_cells ila_0]
+save_bd_design
+save_constraints
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+current_design impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property CONTROL.CAPTURE_MODE BASIC [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"hw_ila_1"}]
+set_property CORE_REFRESH_RATE_MS 1 [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"hw_ila_1"}]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+file copy -force D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.bit D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+set_property PARAM.FREQUENCY 500000 [get_hw_targets localhost:3121/xilinx_tcf/Digilent/210299A1F4EC]
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+current_design synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.0 system_ila_0
+endgroup
+connect_bd_net [get_bd_ports clk_shared] [get_bd_pins system_ila_0/clk]
+startgroup
+set_property -dict [list CONFIG.C_PROBE3_TYPE {1} CONFIG.C_PROBE2_TYPE {1} CONFIG.C_PROBE1_TYPE {0} CONFIG.C_PROBE3_WIDTH {16} CONFIG.C_PROBE2_WIDTH {16} CONFIG.C_PROBE1_WIDTH {1} CONFIG.C_DATA_DEPTH {16384} CONFIG.C_NUM_OF_PROBES {6} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_MON_TYPE {NATIVE} CONFIG.C_PROBE_WIDTH_PROPAGATION {MANUAL} CONFIG.C_BRAM_CNT {16.5} CONFIG.C_PROBE5_MU_CNT {2} CONFIG.C_PROBE4_MU_CNT {2} CONFIG.C_PROBE3_MU_CNT {2} CONFIG.C_PROBE2_MU_CNT {2} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_bd_cells system_ila_0]
+endgroup
+set_property location {6.5 1674 576} [get_bd_cells system_ila_0]
+set_property location {6 1680 366} [get_bd_cells system_ila_0]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/err_detect_o] [get_bd_pins system_ila_0/probe0]
+delete_bd_objs [get_bd_nets sdram_ctrl_tmr_avalon_0_err_detect_o]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/mem_ready_o] [get_bd_pins system_ila_0/probe0]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/err_detect_o] [get_bd_pins system_ila_0/probe1]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/err_counter_o] [get_bd_pins system_ila_0/probe2]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/voted_data_o] [get_bd_pins system_ila_0/probe3]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/scrubbing_proc_run_o] [get_bd_pins system_ila_0/probe4]
+connect_bd_net [get_bd_pins sdram_ctrl_tmr_avalon_0/healing_proc_run_o] [get_bd_pins system_ila_0/probe5]
+regenerate_bd_layout
+save_bd_design
+startgroup
+set_property -dict [list CONFIG.USE_MIN_POWER {true} CONFIG.JITTER_SEL {Max_I_Jitter} CONFIG.USE_SAFE_CLOCK_STARTUP {true} CONFIG.JITTER_SEL {Max_I_Jitter} CONFIG.CLKOUT1_DRIVES {BUFGCE} CONFIG.CLKOUT2_DRIVES {BUFGCE} CONFIG.CLKOUT3_DRIVES {BUFGCE} CONFIG.CLKOUT4_DRIVES {BUFGCE} CONFIG.CLKOUT5_DRIVES {BUFGCE} CONFIG.CLKOUT6_DRIVES {BUFGCE} CONFIG.CLKOUT7_DRIVES {BUFGCE} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_BANDWIDTH {LOW} CONFIG.MMCM_CLKFBOUT_MULT_F {51.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {51.000} CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.5} CONFIG.MMCM_CLKOUT1_DIVIDE {51} CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.5} CONFIG.MMCM_CLKOUT2_DIVIDE {51} CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.5} CONFIG.CLKOUT1_JITTER {802.823} CONFIG.CLKOUT1_PHASE_ERROR {1421.482} CONFIG.CLKOUT2_JITTER {802.823} CONFIG.CLKOUT2_PHASE_ERROR {1421.482} CONFIG.CLKOUT3_JITTER {802.823} CONFIG.CLKOUT3_PHASE_ERROR {1421.482}] [get_bd_cells clk_wiz_1]
+endgroup
+save_bd_design
+save_constraints
+reset_run synth_1
+reset_run DemoSDRAM_clk_wiz_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+startgroup
+endgroup
+reset_target all [get_files  D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+export_ip_user_files -of_objects  [get_files  D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+make_wrapper -files [get_files D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd] -top
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+open_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+current_design impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+set_property PARAM.FREQUENCY 500000 [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+open_hw_target
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/5_Chip2Chip/Vivado/chip2chip_bridge/chip2chip_bridge.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"test_design_i/system_ila_0/U0/ila_lib"}]]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+save_wave_config {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+remove_files  -fileset constrs_1 D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/controller_src/seud_sdram_sys_timing_constraints.sdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property CONTROL.CAPTURE_MODE ALWAYS [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"hw_ila_1"}]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property CONTROL.CAPTURE_MODE BASIC [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"hw_ila_1"}]
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+set_property PARAM.FREQUENCY 500000 [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+open_hw_target
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+add_files -fileset constrs_1 -norecurse D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/SEUDConstraints.xdc
+import_files -fileset constrs_1 {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/controller_src/pin_assignment.xdc D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/SEUDConstraints.xdc}
+report_clocks
+set_property target_constrs_file D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUDConstraints.xdc [current_fileset -constrset]
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+open_bd_design {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+set_property STEPS.SYNTH_DESIGN.ARGS.GATED_CLOCK_CONVERSION auto [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+check_timing -verbose -name timing_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+get_clocks
+get_clocks { clk_sdram_DemoSDRAM_clk_wiz_1_0 }
+get_clocks { clk_ctrl_DemoSDRAM_clk_wiz_1_0 }
+set_input_delay /help
+set_input_delay -help
+set_input_delay -min 2 -clock {clk_ctrl_DemoSDRAM_clk_wiz_1_0}
+set_input_delay -min 2 -clock {clk_ctrl_DemoSDRAM_clk_wiz_1_0} [ get_ports { dataQ_io[0] dataQ_io[10] dataQ_io[11] dataQ_io[12] dataQ_io[13] dataQ_io[14] dataQ_io[15] dataQ_io[1] dataQ_io[2] dataQ_io[3] dataQ_io[4] dataQ_io[5] dataQ_io[6] dataQ_io[7] dataQ_io[8] dataQ_io[9] } ]
+set_multicycle_path -setup 2 -from [ get_clocks { clk_sdram_DemoSDRAM_clk_wiz_1_0 } ] -to [ get_clocks { clk_ctrl_DemoSDRAM_clk_wiz_1_0 } ]
+current_design impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+current_design synth_1
+save_constraints
+current_design impl_1
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+set_property PARAM.FREQUENCY 500000 [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+open_hw_target
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+refresh_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210299A1F4EC}
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+set_property PARAM.FREQUENCY 500000 [get_hw_targets */xilinx_tcf/Digilent/210299A1F4EC]
+open_hw_target
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROGRAM.FILE {D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/DemoSDRAM_wrapper.bit} [lindex [get_hw_devices xc7a200t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]
+refresh_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv ekyr.kth.se:user:sdram_ctrl_tmr_avalon:1.0 [get_ips  DemoSDRAM_sdram_ctrl_tmr_avalon_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips DemoSDRAM_sdram_ctrl_tmr_avalon_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd]

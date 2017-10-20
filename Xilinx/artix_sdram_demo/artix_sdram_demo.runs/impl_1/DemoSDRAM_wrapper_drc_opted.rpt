@@ -1,0 +1,134 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Fri Oct 20 02:48:52 2017
+| Host         : EMA-VAIO running 64-bit major release  (build 9200)
+| Command      : report_drc -file DemoSDRAM_wrapper_drc_opted.rpt
+| Design       : DemoSDRAM_wrapper
+| Device       : xc7a200tfbg676-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 17
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1    | Warning  | Input pipelining                                    | 8          |
+| DPOP-1    | Warning  | PREG Output pipelining                              | 2          |
+| DPOP-2    | Warning  | MREG Output pipelining                              | 1          |
+| PLIO-8    | Warning  | Placement Constraints Check for IO constraints      | 4          |
+| REQP-1615 | Warning  | use_IOB_register                                    | 1          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_upper/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Use_DSP48E1.dsp_module_lower/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 multiplier stage DemoSDRAM_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLIO-8#1 Warning
+Placement Constraints Check for IO constraints  
+Terminal clk_sdram has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+Related violations: <none>
+
+PLIO-8#2 Warning
+Placement Constraints Check for IO constraints  
+Terminal clk_shared has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+Related violations: <none>
+
+PLIO-8#3 Warning
+Placement Constraints Check for IO constraints  
+Terminal cs_o has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+Related violations: <none>
+
+PLIO-8#4 Warning
+Placement Constraints Check for IO constraints  
+Terminal status_led has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+Related violations: <none>
+
+REQP-1615#1 Warning
+use_IOB_register  
+The FDCE cell DemoSDRAM_i/sdram_ctrl_tmr_avs_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_rd_grnt_reg has IOB set to TRUE, but does not connect directly to an IO cell. Remove the constraint or ensure the FDCE is property connected to an IO.
+Related violations: <none>
+
+

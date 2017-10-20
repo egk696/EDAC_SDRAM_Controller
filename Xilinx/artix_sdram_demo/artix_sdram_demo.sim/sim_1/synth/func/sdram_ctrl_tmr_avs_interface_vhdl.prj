@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "sdram_ctrl_tmr_avs_interface_func_synth.vhd"
+vhdl work  "../../../../../controller_src/utils_pack.vhd"
+vhdl work  "../../../../../controller_src/tmr_error_generator.vhd"
+vhdl work  "../../../../../controller_src/tmr_voter.vhd"
+vhdl work  "../../../../../controller_src/tmr_address_mask.vhd"
+vhdl work  "../../../../../controller_src/sdram_ctrl_tmr_scrubber.vhd"
+vhdl work  "../../../../../controller_src/sdram_ctrl_tmr_healer.vhd"
+vhdl work  "../../../../../controller_src/xilinx/sdram_ctrl_tmr.vhd"
+vhdl work  "../../../../../controller_src/sdram_ctrl_tmr_top.vhd"
+vhdl work  "../../../../../controller_src/xilinx/sdram_ctrl_tmr_avs_interface.vhd"
+
+# Do not sort compile order
+nosort

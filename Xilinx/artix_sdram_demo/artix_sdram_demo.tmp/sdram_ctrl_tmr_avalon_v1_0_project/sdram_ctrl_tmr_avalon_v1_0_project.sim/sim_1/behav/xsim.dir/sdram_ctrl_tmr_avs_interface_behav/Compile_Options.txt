@@ -1,0 +1,1 @@
+-wto "c07b563942834b03ba61a503950eb8d3" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sdram_ctrl_tmr_avs_interface_behav" "xil_defaultlib.sdram_ctrl_tmr_avs_interface" -log "elaborate.log" 

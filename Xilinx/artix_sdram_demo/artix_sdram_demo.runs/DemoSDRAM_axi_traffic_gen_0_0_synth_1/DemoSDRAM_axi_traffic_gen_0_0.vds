@@ -1,0 +1,225 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Oct 20 02:06:02 2017
+# Process ID: 13128
+# Current directory: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_traffic_gen_0_0_synth_1
+# Command line: vivado.exe -log DemoSDRAM_axi_traffic_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoSDRAM_axi_traffic_gen_0_0.tcl
+# Log file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_traffic_gen_0_0_synth_1/DemoSDRAM_axi_traffic_gen_0_0.vds
+# Journal file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_traffic_gen_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_axi_traffic_gen_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:01:20 . Memory (MB): peak = 340.852 ; gain = 130.590
+INFO: [Synth 8-638] synthesizing module 'DemoSDRAM_axi_traffic_gen_0_0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_traffic_gen_0_0/synth/DemoSDRAM_axi_traffic_gen_0_0.v:62]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_top' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:14414]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_basic_n_full_top' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:10992]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_paramram_wrap' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3734]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_slvram_v7' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:129]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_inferram' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper' (9#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap' (10#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_inferram' (11#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_slvram_v7' (12#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:129]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice' (13#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_randgen' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:905]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_randgen' (14#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:905]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_randgen__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:905]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_randgen__parameterized0' (14#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:905]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_paramram_wrap' (15#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3734]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_s_w_channel' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1815]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo' (16#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized0' (16#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen' (17#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized1' (17#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_id_track' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:990]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_id_track' (18#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:990]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized2' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized2' (18#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized0' (18#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_s_w_channel' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1815]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_s_r_channel' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:2507]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized0' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized1' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized2' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized2' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized3' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized3' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized3' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized3' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized4' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized4' (19#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_s_r_channel' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:2507]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_m_w_channel' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:6599]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized5' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized5' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized6' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized6' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized7' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized7' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized8' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized8' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized1' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized9' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized9' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized4' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized4' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized10' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized10' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized11' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized11' (20#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_m_w_channel' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:6599]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_m_r_channel' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:7690]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized12' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized12' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized13' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized13' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized5' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized5' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized14' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized14' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized6' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized6' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized15' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized15' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized7' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized7' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized2' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized2' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized16' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized16' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized8' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_addrgen__parameterized8' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1517]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized17' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_ex_fifo__parameterized17' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1124]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized3' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized3' (21#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_m_r_channel' (22#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:7690]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_cmdram_wrap' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:8766]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_cmdram' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1305]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_inferram__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper__parameterized0' (22#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap__parameterized0' (22#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_inferram__parameterized0' (22#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_cmdram' (23#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:1305]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized4' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized4' (23#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized5' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized5' (23#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_cmdram_wrap' (24#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:8766]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_sharedram_wrap' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3046]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_slvram_v7__parameterized0' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:129]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_inferram__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_wrapper__parameterized1' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_wrapper__parameterized1' (24#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/38e8/hdl/lib_bmg_v1_0_rfs.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_bmg_wrap__parameterized1' (24#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.vhd:188]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_inferram__parameterized1' (24#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:552]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_slvram_v7__parameterized0' (24#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:129]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_sharedram_wrap' (25#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3046]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_registers' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3271]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized6' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_regslice__parameterized6' (25#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:401]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_registers' (26#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:3271]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_basic_n_full_top' (27#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:10992]
+INFO: [Synth 8-638] synthesizing module 'axi_traffic_gen_v2_0_12_asynch_rst_ff' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_asynch_rst_ff' (28#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:55]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (29#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_traffic_gen_v2_0_12_top' (30#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ipshared/e3ab/hdl/axi_traffic_gen_v2_0_rfs.v:14414]
+INFO: [Synth 8-256] done synthesizing module 'DemoSDRAM_axi_traffic_gen_0_0' (31#1) [c:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_traffic_gen_0_0/synth/DemoSDRAM_axi_traffic_gen_0_0.v:62]
+Finished RTL Elaboration : Time (s): cpu = 00:03:15 ; elapsed = 00:04:30 . Memory (MB): peak = 607.563 ; gain = 397.301
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:16 ; elapsed = 00:04:31 . Memory (MB): peak = 607.563 ; gain = 397.301
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.329 . Memory (MB): peak = 800.254 ; gain = 3.359
+Finished Constraint Validation : Time (s): cpu = 00:03:31 ; elapsed = 00:04:47 . Memory (MB): peak = 800.254 ; gain = 589.992
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:31 ; elapsed = 00:04:47 . Memory (MB): peak = 800.254 ; gain = 589.992
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:32 ; elapsed = 00:04:48 . Memory (MB): peak = 800.254 ; gain = 589.992
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:37 ; elapsed = 00:04:53 . Memory (MB): peak = 800.254 ; gain = 589.992
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:05:31 . Memory (MB): peak = 800.254 ; gain = 589.992
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------------------------+-----------------------------------------+-----------+----------------------+---------------+
+|Module Name                         | RTL Object                              | Inference | Size (Depth x Width) | Primitives    | 
++------------------------------------+-----------------------------------------+-----------+----------------------+---------------+
+|axi_traffic_gen_v2_0_12_s_w_channel | ATG_S_W_OOO_F_YES.B_fifo1/data_ff_reg   | Implied   | 8 x 20               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_s_w_channel | ATG_S_W_OOO_F_YES.B_fifo2/data_ff_reg   | Implied   | 8 x 20               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_s_w_channel | ATG_S_W_OOO_F_YES.B_fifo3/data_ff_reg   | Implied   | 8 x 20               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_s_w_channel | Awfifo/data_ff_reg                      | Implied   | 8 x 72               | RAM32M x 12   | 
+|axi_traffic_gen_v2_0_12_s_w_channel | Wfifo/data_ff_reg                       | Implied   | 8 x 37               | RAM32M x 7    | 
+|axi_traffic_gen_v2_0_12_s_w_channel | B_fifo0/data_ff_reg                     | Implied   | 8 x 20               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_s_w_channel | Bfifo/data_ff_reg                       | Implied   | 8 x 20               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_s_r_channel | Arfifo/data_ff_reg                      | Implied   | 8 x 72               | RAM32M x 12   | 
+|axi_traffic_gen_v2_0_12_s_r_channel | Rdataout/data_ff_reg                    | Implied   | 8 x 56               | RAM32M x 10   | 
+|axi_traffic_gen_v2_0_12_m_w_channel | AXI4_AW_BASIC2_NO.Maw_fifo/data_ff_reg  | Implied   | 8 x 101              | RAM32M x 17   | 
+|axi_traffic_gen_v2_0_12_m_w_channel | ATG_M_W_OOO_F_YES.Maw_fifo1/data_ff_reg | Implied   | 8 x 21               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_m_w_channel | ATG_M_W_OOO_F_YES.Maw_fifo2/data_ff_reg | Implied   | 8 x 21               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_m_w_channel | ATG_M_W_OOO_F_YES.Maw_fifo3/data_ff_reg | Implied   | 8 x 21               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_m_w_channel | Maw_fifow/data_ff_reg                   | Implied   | 8 x 78               | RAM32M x 13   | 
+|axi_traffic_gen_v2_0_12_m_w_channel | Mw_fifo/data_ff_reg                     | Implied   | 8 x 43               | RAM32M x 8    | 
+|axi_traffic_gen_v2_0_12_m_w_channel | Maw_fifo0/data_ff_reg                   | Implied   | 8 x 21               | RAM32M x 4    | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 101              | RAM32M x 17   | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 89               | RAM32M x 15   | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 89               | RAM32M x 15   | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 89               | RAM32M x 15   | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 89               | RAM32M x 15   | 
+|axi_traffic_gen_v2_0_12_ex_fifo     | data_ff_reg                             | Implied   | 8 x 36               | RAM32M x 6    | 
++------------------------------------+-----------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:27 ; elapsed = 00:05:47 . Memory (MB): peak = 819.090 ; gain = 608.828
+Finished Timing Optimization : Time (s): cpu = 00:04:35 ; elapsed = 00:05:55 . Memory (MB): peak = 894.004 ; gain = 683.742
+Finished Technology Mapping : Time (s): cpu = 00:04:41 ; elapsed = 00:06:01 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished IO Insertion : Time (s): cpu = 00:04:42 ; elapsed = 00:06:02 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:42 ; elapsed = 00:06:02 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:44 ; elapsed = 00:06:04 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:44 ; elapsed = 00:06:04 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:44 ; elapsed = 00:06:04 . Memory (MB): peak = 969.172 ; gain = 758.910
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:44 ; elapsed = 00:06:04 . Memory (MB): peak = 969.172 ; gain = 758.910
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   398|
+|2     |LUT1       |   703|
+|3     |LUT2       |   758|
+|4     |LUT3       |  1036|
+|5     |LUT4       |   974|
+|6     |LUT5       |   662|
+|7     |LUT6       |  1414|
+|8     |RAM32M     |   143|
+|9     |RAMB36E1   |     1|
+|10    |RAMB36E1_1 |     1|
+|11    |RAMB36E1_2 |     1|
+|12    |RAMB36E1_3 |     1|
+|13    |RAMB36E1_4 |     1|
+|14    |RAMB36E1_5 |     1|
+|15    |RAMB36E1_6 |     1|
+|16    |SRL16E     |     1|
+|17    |FDPE       |     4|
+|18    |FDR        |     8|
+|19    |FDRE       |  4211|
+|20    |FDSE       |   139|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:44 ; elapsed = 00:06:04 . Memory (MB): peak = 969.172 ; gain = 758.910
+synth_design: Time (s): cpu = 00:04:43 ; elapsed = 00:05:08 . Memory (MB): peak = 969.172 ; gain = 715.344

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-1" LaunchTime="1508455610">
+  <File Type="RDS-PROPCONSTRS" Name="DemoSDRAM_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="DemoSDRAM_wrapper.tcl"/>
+  <File Type="RDS-RDS" Name="DemoSDRAM_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="DemoSDRAM_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="DemoSDRAM_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="DemoSDRAM_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="DemoSDRAM_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="DemoSDRAM_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/DemoSDRAM/DemoSDRAM.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/DemoSDRAM/hdl/DemoSDRAM_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/utils_pack.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/tmr_error_generator.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/tmr_voter.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/tmr_address_mask.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/sdram_ctrl_tmr_scrubber.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/sdram_ctrl_tmr_healer.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/xilinx/sdram_ctrl_tmr.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/sdram_ctrl_tmr_top.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/avs_testbench/avs_testbench.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../controller_src/xilinx/sdram_ctrl_tmr_avs_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../controller_src/tmr_fsm_watchdog.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../controller_src/sdram_ctrl_tmr_ahblite_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../controller_src/xilinx/sdram_ctrl_tmr_axi_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../controller_src/sdram_ctrl_tmr_apb3_interface.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/avs_testbench/ip/avs_testbench_axi_traffic_gen_0_0/demo_addr_traffic.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DemoSDRAM_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SEUD_pin_constrs.xdc"/>
+        <Attr Name="ImportTime" Val="1499106613"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/4_SDRTMRController/SEUD_timing_constrs.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SEUD_timing_constrs.xdc"/>
+        <Attr Name="ImportTime" Val="1499106613"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/SEUD_debug_constrs.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design">
+      <Option Id="GatedClockConversion">2</Option>
+      <Option Id="FlattenHierarchy">1</Option>
+      <Option Id="ReTiming">1</Option>
+      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="Assert">1</Option>
+    </Step>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="avs_testbench_axi_amm_bridge_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="avs_testbench_axi_traffic_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_axi_protocol_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_sdram_ctrl_tmr_avalon_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_dlmb_bram_if_cntlr_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_axi_traffic_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_axi_crossbar_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_xlconstant_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DemoSDRAM_s00_mmu_0"/>
+</GenRun>

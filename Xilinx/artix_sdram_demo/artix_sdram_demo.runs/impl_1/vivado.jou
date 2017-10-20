@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Oct 20 02:46:01 2017
+# Process ID: 11164
+# Current directory: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/impl_1
+# Command line: vivado.exe -log DemoSDRAM_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DemoSDRAM_wrapper.tcl -notrace
+# Log file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.vdi
+# Journal file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_wrapper.tcl -notrace

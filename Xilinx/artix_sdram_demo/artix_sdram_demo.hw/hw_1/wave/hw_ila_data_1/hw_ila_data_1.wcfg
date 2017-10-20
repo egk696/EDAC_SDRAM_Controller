@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="34001fs"></ZoomEndTime>
+      <Cursor1Time time="18000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wave_markers>
+      <marker time="10000" label="" />
+   </wave_markers>
+   <wvobject type="divider" fp_name="divider46">
+      <obj_property name="label">Controller</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_mem_ready_o" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_mem_ready_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_mem_ready_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">mem_ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_detect_o" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_detect_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_err_detect_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">err_detect_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">scrubbing_proc_run_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_healing_proc_run_o" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_healing_proc_run_o</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_healing_proc_run_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">healing_proc_run_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_counter_o" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_err_counter_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_err_counter_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">err_counter_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_voted_data_o" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_voted_data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_voted_data_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">voted_data_o[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider42">
+      <obj_property name="label">Component</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/axi_amm_bridge_0_avm_address" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/axi_amm_bridge_0_avm_address[23:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_address[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avm_address[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/axi_amm_bridge_0_avm_writedata" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/axi_amm_bridge_0_avm_writedata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_writedata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avm_writedata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/axi_amm_bridge_0_avm_write" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/axi_amm_bridge_0_avm_write</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_write</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avm_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/axi_amm_bridge_0_avm_read" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/axi_amm_bridge_0_avm_read</obj_property>
+      <obj_property name="ObjectShortName">axi_amm_bridge_0_avm_read</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avm_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_avs_waitrequest" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_avs_waitrequest</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_avs_waitrequest</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avs_waitrequest</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avs_0_avs_readdatavalid" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avs_0_avs_readdatavalid</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avs_0_avs_readdatavalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avs_readdatavalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_avs_readdata" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">DemoSDRAM_i/sdram_ctrl_tmr_avalon_0_avs_readdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sdram_ctrl_tmr_avalon_0_avs_readdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label">avs_readdata[31:0]</obj_property>
+   </wvobject>
+</wave_config>

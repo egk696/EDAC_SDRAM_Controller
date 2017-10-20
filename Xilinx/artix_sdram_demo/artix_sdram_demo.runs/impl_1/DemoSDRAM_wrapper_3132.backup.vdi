@@ -1,0 +1,579 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 07 17:55:07 2017
+# Process ID: 3132
+# Current directory: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1
+# Command line: vivado.exe -log DemoSDRAM_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DemoSDRAM_wrapper.tcl -notrace
+# Log file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper.vdi
+# Journal file: D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_amm_bridge_0_0/DemoSDRAM_axi_amm_bridge_0_0.dcp' for cell 'DemoSDRAM_i/axi_amm_bridge_0'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.dcp' for cell 'DemoSDRAM_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_mdm_1_0/DemoSDRAM_mdm_1_0.dcp' for cell 'DemoSDRAM_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_microblaze_0_0/DemoSDRAM_microblaze_0_0.dcp' for cell 'DemoSDRAM_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0.dcp' for cell 'DemoSDRAM_i/rst_clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0.dcp' for cell 'DemoSDRAM_i/sdram_ctrl_tmr_avalon_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_system_ila_0_0_1/DemoSDRAM_system_ila_0_0.dcp' for cell 'DemoSDRAM_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_util_reduced_logic_0_0/DemoSDRAM_util_reduced_logic_0_0.dcp' for cell 'DemoSDRAM_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_xlconstant_0_2/DemoSDRAM_xlconstant_0_2.dcp' for cell 'DemoSDRAM_i/xlconstant_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_xbar_0/DemoSDRAM_xbar_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_bram_if_cntlr_0/DemoSDRAM_dlmb_bram_if_cntlr_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_v10_0/DemoSDRAM_dlmb_v10_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_bram_if_cntlr_0/DemoSDRAM_ilmb_bram_if_cntlr_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_v10_0/DemoSDRAM_ilmb_v10_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_lmb_bram_0/DemoSDRAM_lmb_bram_0.dcp' for cell 'DemoSDRAM_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 718 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a200tfbg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_microblaze_0_0/DemoSDRAM_microblaze_0_0.xdc] for cell 'DemoSDRAM_i/microblaze_0/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_microblaze_0_0/DemoSDRAM_microblaze_0_0.xdc] for cell 'DemoSDRAM_i/microblaze_0/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_v10_0/DemoSDRAM_dlmb_v10_0.xdc] for cell 'DemoSDRAM_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_v10_0/DemoSDRAM_dlmb_v10_0.xdc] for cell 'DemoSDRAM_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_v10_0/DemoSDRAM_ilmb_v10_0.xdc] for cell 'DemoSDRAM_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_v10_0/DemoSDRAM_ilmb_v10_0.xdc] for cell 'DemoSDRAM_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_mdm_1_0/DemoSDRAM_mdm_1_0.xdc] for cell 'DemoSDRAM_i/mdm_1/U0'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_mdm_1_0/DemoSDRAM_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1141.977 ; gain = 552.645
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_mdm_1_0/DemoSDRAM_mdm_1_0.xdc] for cell 'DemoSDRAM_i/mdm_1/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0_board.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0_board.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.xdc:57]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.833330 which will be rounded to 0.833 to ensure it is an integer multiple of 1 picosecond [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0_board.xdc] for cell 'DemoSDRAM_i/rst_clk_wiz_1/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0_board.xdc] for cell 'DemoSDRAM_i/rst_clk_wiz_1/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0.xdc] for cell 'DemoSDRAM_i/rst_clk_wiz_1/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0.xdc] for cell 'DemoSDRAM_i/rst_clk_wiz_1/U0'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_amm_bridge_0_0/DemoSDRAM_axi_amm_bridge_0_0.xdc] for cell 'DemoSDRAM_i/axi_amm_bridge_0/inst'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_amm_bridge_0_0/DemoSDRAM_axi_amm_bridge_0_0.xdc] for cell 'DemoSDRAM_i/axi_amm_bridge_0/inst'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_system_ila_0_0_1/bd_1/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'DemoSDRAM_i/system_ila_0/U0/ila_lib/U0'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_system_ila_0_0_1/bd_1/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'DemoSDRAM_i/system_ila_0/U0/ila_lib/U0'
+Parsing XDC File [D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc]
+Finished Parsing XDC File [D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc]
+Parsing XDC File [D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_timing_constrs.xdc]
+Finished Parsing XDC File [D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_timing_constrs.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_microblaze_0_0/DemoSDRAM_microblaze_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_v10_0/DemoSDRAM_dlmb_v10_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_v10_0/DemoSDRAM_ilmb_v10_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_dlmb_bram_if_cntlr_0/DemoSDRAM_dlmb_bram_if_cntlr_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_ilmb_bram_if_cntlr_0/DemoSDRAM_ilmb_bram_if_cntlr_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_lmb_bram_0/DemoSDRAM_lmb_bram_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_mdm_1_0/DemoSDRAM_mdm_1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_rst_clk_wiz_1_100M_0/DemoSDRAM_rst_clk_wiz_1_100M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_axi_amm_bridge_0_0/DemoSDRAM_axi_amm_bridge_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_system_ila_0_0_1/DemoSDRAM_system_ila_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_xbar_0/DemoSDRAM_xbar_0.dcp'
+Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0_late.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+Finished Parsing XDC File [d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_clk_wiz_1_0/DemoSDRAM_clk_wiz_1_0_late.xdc] for cell 'DemoSDRAM_i/clk_wiz_1/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+Generating merged BMM file for the design top 'DemoSDRAM_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/ip/DemoSDRAM_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 496 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 352 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+link_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1174.434 ; gain = 964.418
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1174.434 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Development/SEUD-MIST/SEUD/4_SDRTMRController/controller_src'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:2.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:2.0", from Vivado IP cache entry "3acfd2721e1b9f8f".
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1205.309 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 9aeb7e94
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:56 . Memory (MB): peak = 1205.309 ; gain = 30.875
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance DemoSDRAM_i/sdram_ctrl_tmr_avalon_0/U0/sdram_ctrl_tmr_inst/sdram_ctrl_inst/current_dqm_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+Implement Debug Cores | Checksum: 684a4ce9
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 13 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: fa846664
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:59 . Memory (MB): peak = 1206.113 ; gain = 31.680
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 221 cells.
+Phase 3 Constant propagation | Checksum: d4d632e0
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:01:02 . Memory (MB): peak = 1206.113 ; gain = 31.680
+
+Phase 4 Sweep
+INFO: [Opt 31-12] Eliminated 1201 unconnected nets.
+INFO: [Opt 31-11] Eliminated 701 unconnected cells.
+Phase 4 Sweep | Checksum: 1f0bd58b7
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:01:04 . Memory (MB): peak = 1206.113 ; gain = 31.680
+
+Phase 5 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 5 BUFG optimization | Checksum: 21bfa23f4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:01:07 . Memory (MB): peak = 1206.113 ; gain = 31.680
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1206.113 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 21bfa23f4
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:01:08 . Memory (MB): peak = 1206.113 ; gain = 31.680
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 133 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 8 newly gated: 0 Total Ports: 266
+Ending PowerOpt Patch Enables Task | Checksum: 234dc9bda
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 234dc9bda
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:46 . Memory (MB): peak = 1691.680 ; gain = 485.566
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:58 . Memory (MB): peak = 1691.680 ; gain = 517.246
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+CRITICAL WARNING: [Place 30-722] Terminal 'clk_shared' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'cs_o' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'sdram_clk' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+CRITICAL WARNING: [Place 30-722] Terminal 'status_led' has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12c7d335b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 273d7e659
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:54 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 273d7e659
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:54 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 273d7e659
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1eae4cc83
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:16 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1eae4cc83
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:16 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20b6b04df
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:22 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1f5a5324b
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:22 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 231ab32a2
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:22 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 22e7e3a5b
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 22e7e3a5b
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 1f08a4865
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:32 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 1c4982305
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:33 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 1c4982305
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:33 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1c4982305
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1c4982305
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:36 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-8.061. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1f45a2490
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1f45a2490
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1f45a2490
+
+Time (s): cpu = 00:03:14 ; elapsed = 00:02:17 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1f45a2490
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:17 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 217aaed08
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:17 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 217aaed08
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Ending Placer Task | Checksum: 1781eb6d8
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+84 Infos, 13 Warnings, 4 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:22 ; elapsed = 00:02:22 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1691.680 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1691.680 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.272 . Memory (MB): peak = 1691.680 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1691.680 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PLIO-8) Placement Constraints Check for IO constraints - Terminal clk_shared has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC 23-20] Rule violation (PLIO-8) Placement Constraints Check for IO constraints - Terminal cs_o has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC 23-20] Rule violation (PLIO-8) Placement Constraints Check for IO constraints - Terminal sdram_clk has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+WARNING: [DRC 23-20] Rule violation (PLIO-8) Placement Constraints Check for IO constraints - Terminal status_led has IOB constraint set to TRUE, but it is either not connected to a FLOP element or the connected FLOP element could not be brought into the I/O.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: ce2ca776 ConstDB: 0 ShapeSum: a9f20f62 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1e34e2518
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:02:00 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1e34e2518
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:02:00 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1e34e2518
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:02:01 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1e34e2518
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:02:01 . Memory (MB): peak = 1691.680 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: aebc203e
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:02:14 . Memory (MB): peak = 1691.680 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.030 | TNS=-322.259| WHS=-0.520 | THS=-3308.732|
+
+Phase 2 Router Initialization | Checksum: 8392dae2
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:02:20 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1e71b5a66
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:27 . Memory (MB): peak = 1691.680 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 973
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 194004659
+
+Time (s): cpu = 00:09:26 ; elapsed = 00:06:27 . Memory (MB): peak = 1728.516 ; gain = 36.836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.800 | TNS=-305.595| WHS=N/A    | THS=N/A    |
+
+
+Phase 4.1.2 GlobIterForTiming
+
+Phase 4.1.2.1 Update Timing
+Phase 4.1.2.1 Update Timing | Checksum: a4a3f226
+
+Time (s): cpu = 00:09:29 ; elapsed = 00:06:29 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 4.1.2.2 Fast Budgeting
+Phase 4.1.2.2 Fast Budgeting | Checksum: 12055a9f8
+
+Time (s): cpu = 00:09:30 ; elapsed = 00:06:31 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Phase 4.1.2 GlobIterForTiming | Checksum: 1ac68a549
+
+Time (s): cpu = 00:09:34 ; elapsed = 00:06:34 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Phase 4.1 Global Iteration 0 | Checksum: 1ac68a549
+
+Time (s): cpu = 00:09:34 ; elapsed = 00:06:34 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 170a35a9b
+
+Time (s): cpu = 00:09:36 ; elapsed = 00:06:37 . Memory (MB): peak = 1728.516 ; gain = 36.836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.794 | TNS=-305.045| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 7e2942a6
+
+Time (s): cpu = 00:09:37 ; elapsed = 00:06:37 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Phase 4 Rip-up And Reroute | Checksum: 7e2942a6
+
+Time (s): cpu = 00:09:37 ; elapsed = 00:06:37 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 137d9e322
+
+Time (s): cpu = 00:09:40 ; elapsed = 00:06:39 . Memory (MB): peak = 1728.516 ; gain = 36.836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.794 | TNS=-305.045| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1346a3aad
+
+Time (s): cpu = 00:09:46 ; elapsed = 00:06:42 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1346a3aad
+
+Time (s): cpu = 00:09:46 ; elapsed = 00:06:42 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Phase 5 Delay and Skew Optimization | Checksum: 1346a3aad
+
+Time (s): cpu = 00:09:46 ; elapsed = 00:06:42 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1036d1611
+
+Time (s): cpu = 00:09:50 ; elapsed = 00:06:45 . Memory (MB): peak = 1728.516 ; gain = 36.836
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-7.671 | TNS=-329.730| WHS=-0.140 | THS=-73.406|
+
+Phase 6.1 Hold Fix Iter | Checksum: 22002ce3d
+
+Time (s): cpu = 00:09:51 ; elapsed = 00:06:45 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Phase 6 Post Hold Fix | Checksum: 179a84b63
+
+Time (s): cpu = 00:09:51 ; elapsed = 00:06:46 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.96516 %
+  Global Horizontal Routing Utilization  = 2.54941 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 61.2613%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 78.3784%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 69.1176%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 20690edd1
+
+Time (s): cpu = 00:09:52 ; elapsed = 00:06:46 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 20690edd1
+
+Time (s): cpu = 00:09:52 ; elapsed = 00:06:46 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 234ec8764
+
+Time (s): cpu = 00:09:54 ; elapsed = 00:06:48 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 182e446a1
+
+Time (s): cpu = 00:09:58 ; elapsed = 00:06:51 . Memory (MB): peak = 1728.516 ; gain = 36.836
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-7.671 | TNS=-329.730| WHS=-0.140 | THS=-73.370|
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 182e446a1
+
+Time (s): cpu = 00:09:58 ; elapsed = 00:06:51 . Memory (MB): peak = 1728.516 ; gain = 36.836
+WARNING: [Route 35-426] Router was unable to fix hold violation on unroutable pins. The router cannot add routing detours to improve hold time because the pins are part of one or more of the following unroutable types: partition pins, fixed routes and intra-site connections.
+Resolution: Run report_timing_summary to analyze the hold violations.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:09:58 ; elapsed = 00:06:51 . Memory (MB): peak = 1728.516 ; gain = 36.836
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+98 Infos, 19 Warnings, 4 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:10:06 ; elapsed = 00:06:55 . Memory (MB): peak = 1728.516 ; gain = 36.836
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 1728.516 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1728.516 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1728.516 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1/DemoSDRAM_wrapper_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:43 ; elapsed = 00:00:24 . Memory (MB): peak = 1741.926 ; gain = 13.410
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1757.309 ; gain = 15.383
+Command: report_power -file DemoSDRAM_wrapper_power_routed.rpt -pb DemoSDRAM_wrapper_power_summary_routed.pb -rpx DemoSDRAM_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+108 Infos, 20 Warnings, 5 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1791.246 ; gain = 33.938
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 07 18:08:41 2017...

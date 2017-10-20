@@ -1,0 +1,15 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc rfile:../artix_sdram_demo.srcs/constrs_1/imports/4_SDRTMRController/SEUD_pin_constrs.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+create_property iob port -type string
+set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN U22 IOSTANDARD LVCMOS18} [get_ports clk_shared]
+set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN AE2 IOSTANDARD LVCMOS18} [get_ports status_led]
+set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
+set_property SLEW SLOW [get_ports status_led]
+set_property src_info {type:XDC file:1 line:19 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports clk_sdram]
+set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B17 [get_ports clk_sdram]
+set_property src_info {type:XDC file:1 line:73 export:INPUT save:INPUT read:READ} [current_design]
+create_property iob port -type string

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed May 17 11:52:30 2017
+# Process ID: 13868
+# Current directory: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9068 C:\Users\egk69\Documents\Development\SEUD\4_SDRTMRController\artix_sdram_demo\artix_sdram_demo.xpr
+# Log file: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/vivado.log
+# Journal file: C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.xpr
+open_bd_design {C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+open_bd_design {C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+set_property name clk_shared [get_bd_ports clk_in1]
+derive_pll_clocks
+open_bd_design {C:/Users/egk69/Documents/Development/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.srcs/sources_1/bd/DemoSDRAM/DemoSDRAM.bd}
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.CLK_OUT1_PORT {clk_blaze} CONFIG.CLK_OUT2_PORT {clk_ctrl} CONFIG.CLK_OUT3_PORT {clk_sdram} CONFIG.USE_RESET {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {50.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {12.000}] [get_bd_cells clk_wiz_1]
+delete_bd_objs [get_bd_nets clk_wiz_1_clk_out3]
+endgroup
+save_bd_design
+connect_bd_net [get_bd_pins clk_wiz_1/clk_blaze] [get_bd_pins microblaze_0/Clk]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_ctrl] [get_bd_pins axi_clock_converter_0/m_axi_aclk]
+connect_bd_net [get_bd_ports sdram_clk] [get_bd_pins clk_wiz_1/clk_sdram]
+save_bd_design
+reset_run DemoSDRAM_clk_wiz_1_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+connect_bd_net [get_bd_pins clk_wiz_1/locked] [get_bd_pins sdram_ctrl_tmr_avalon_0/rsi_reset_n]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1

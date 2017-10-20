@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DemoSDRAM_microblaze_0_0_synth_1" LaunchDir="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_clk_wiz_1_0_synth_1" LaunchDir="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_mdm_1_0_synth_1" LaunchDir="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1" LaunchDir="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="D:/Development/SEUD-MIST/SEUD/4_SDRTMRController/artix_sdram_demo/artix_sdram_demo.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="DemoSDRAM_microblaze_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_clk_wiz_1_0_synth_1"/>
+		<Parent Id="DemoSDRAM_mdm_1_0_synth_1"/>
+		<Parent Id="DemoSDRAM_sdram_ctrl_tmr_avalon_0_0_synth_1"/>
+	</Run>
+</Runs>
+

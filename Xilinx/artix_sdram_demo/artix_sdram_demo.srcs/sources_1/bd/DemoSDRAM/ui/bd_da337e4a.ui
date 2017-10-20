@@ -1,0 +1,79 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port cas_o -pg 1 -y 570 -defaultsOSRD
+preplace port cke_o -pg 1 -y 470 -defaultsOSRD
+preplace port cs_o -pg 1 -y 530 -defaultsOSRD
+preplace port clk_sdram -pg 1 -y 450 -defaultsOSRD
+preplace port we_o -pg 1 -y 590 -defaultsOSRD
+preplace port status_led -pg 1 -y 670 -defaultsOSRD
+preplace port ras_o -pg 1 -y 550 -defaultsOSRD
+preplace port clk_shared -pg 1 -y 530 -defaultsOSRD
+preplace portBus bank_o -pg 1 -y 490 -defaultsOSRD
+preplace portBus dataQ_io -pg 1 -y 630 -defaultsOSRD
+preplace portBus dqm_o -pg 1 -y 610 -defaultsOSRD
+preplace portBus addr_o -pg 1 -y 510 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 590 -defaultsOSRD
+preplace inst axi_crossbar_0 -pg 1 -lvl 6 -y 320 -defaultsOSRD
+preplace inst axi_protocol_converter_0 -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 4 -y 560 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 400 -defaultsOSRD
+preplace inst rst_clk_wiz_1 -pg 1 -lvl 2 -y 420 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -y 130 -defaultsOSRD
+preplace inst axi_amm_bridge_0 -pg 1 -lvl 7 -y 340 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -y 340 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 9 -y 280 -defaultsOSRD
+preplace inst sdram_ctrl_tmr_avs_0 -pg 1 -lvl 8 -y 610 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -y 350 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -y 530 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -y 360 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 1 1 -250
+preplace netloc axi_amm_bridge_0_avm_writedata 1 7 2 1740 410 NJ
+preplace netloc rst_clk_wiz_1_interconnect_aresetn 1 2 3 NJ 440 NJ 440 890
+preplace netloc axi_crossbar_0_M00_AXI 1 6 1 N
+preplace netloc sdram_ctrl_tmr_avalon_0_voted_data_o 1 8 1 2200
+preplace netloc sdram_ctrl_tmr_avalon_0_err_detect_o 1 8 2 2210 670 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_cas_o 1 8 2 NJ 570 NJ
+preplace netloc mdm_1_MBDEBUG_0 1 3 1 400
+preplace netloc sdram_ctrl_tmr_avalon_0_mem_ready_o 1 3 6 430 480 NJ 480 NJ 480 NJ 480 1780J 400 2170
+preplace netloc sdram_ctrl_tmr_avalon_0_ras_o 1 8 2 NJ 550 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_cke_o 1 8 2 NJ 470 NJ
+preplace netloc clk_wiz_1_clk_sdram 1 1 9 NJ 530 130J 460 NJ 460 NJ 460 NJ 460 NJ 460 1790J 420 2190J 460 2470J
+preplace netloc clk_in1_1 1 0 1 N
+preplace netloc axi_amm_bridge_0_avm_write 1 7 2 1750 390 NJ
+preplace netloc axi_amm_bridge_0_avm_address 1 7 2 1830 290 NJ
+preplace netloc microblaze_0_axi_periph_M00_AXI 1 5 1 1210
+preplace netloc microblaze_0_M_AXI_DP 1 4 1 870
+preplace netloc microblaze_0_ilmb_1 1 4 1 880
+preplace netloc sdram_ctrl_tmr_avalon_0_healing_proc_run_o 1 8 1 2230
+preplace netloc sdram_ctrl_tmr_avalon_0_avs_readdata 1 7 2 1820 330 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_cs_o 1 8 2 NJ 530 NJ
+preplace netloc axi_protocol_converter_0_M_AXI 1 5 1 1190
+preplace netloc axi_traffic_gen_0_M_AXI 1 4 1 880
+preplace netloc xlconstant_0_dout 1 3 1 NJ
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 2 3 90J 230 NJ 230 900
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 2 4 120 270 NJ 270 NJ 270 1190
+preplace netloc sdram_ctrl_tmr_avs_0_avs_readdatavalid 1 7 2 1800 350 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_scrubbing_proc_run_o 1 8 1 2220
+preplace netloc clk_wiz_1_locked 1 1 7 -250 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 N
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 2 2 100J 260 410
+preplace netloc sdram_ctrl_tmr_avalon_0_avs_waitrequest 1 7 2 1760 370 NJ
+preplace netloc axi_amm_bridge_0_avm_read 1 7 2 1810 310 NJ
+preplace netloc microblaze_0_dlmb_1 1 4 1 920
+preplace netloc Net1 1 8 2 NJ 630 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_addr_o 1 8 2 NJ 510 NJ
+preplace netloc clk_wiz_1_clk_blaze 1 1 8 -260 700 110 700 420 700 910 700 1200 700 1450 700 1770 150 NJ
+preplace netloc rst_clk_wiz_1_peripheral_aresetn 1 2 5 120 470 400 470 930 470 1210 470 1460J
+preplace netloc mdm_1_debug_sys_rst 1 1 3 -240 220 NJ 220 390
+preplace netloc sdram_ctrl_tmr_avalon_0_err_counter_o 1 8 1 2180
+preplace netloc sdram_ctrl_tmr_avalon_0_dqm_o 1 8 2 NJ 610 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_we_o 1 8 2 NJ 590 NJ
+preplace netloc sdram_ctrl_tmr_avalon_0_bank_o 1 8 2 NJ 490 NJ
+levelinfo -pg 1 -450 -340 -70 260 650 1060 1330 1600 2010 2380 2490 -top -10 -bot 1610
+",
+}
+{
+   da_axi4_cnt: "4",
+   da_board_cnt: "1",
+   da_mb_cnt: "1",
+}

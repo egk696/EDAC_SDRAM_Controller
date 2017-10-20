@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Oct 20 02:06:02 2017
+# Process ID: 9028
+# Current directory: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_protocol_converter_0_0_synth_1
+# Command line: vivado.exe -log DemoSDRAM_axi_protocol_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DemoSDRAM_axi_protocol_converter_0_0.tcl
+# Log file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_protocol_converter_0_0_synth_1/DemoSDRAM_axi_protocol_converter_0_0.vds
+# Journal file: C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_protocol_converter_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DemoSDRAM_axi_protocol_converter_0_0.tcl -notrace

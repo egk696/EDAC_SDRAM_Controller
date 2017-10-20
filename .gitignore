@@ -5,9 +5,6 @@
 !*/
 !.gitignore
 !*.md
-**/webtalk/
-webtalk/
-Xilinx/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav/xsim.dir/sdram_ctrl_tmr_avs_interface_behav/webtalk/
 
 # Created by https://www.gitignore.io/api/xilinxvivado,alteraquartusii
 
@@ -76,7 +73,6 @@ Xilinx/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/
 ##	This is an example .gitignore file for Vivado, please treat it as an example as 
 ##	it might not be complete. In addition, XAPP 1165 should be followed.
 #########################################################################################################
-
 ###########################################################################
 ##	VIVADO
 ###########################################################################
@@ -121,7 +117,7 @@ Xilinx/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/
 #Do NOT ignore *.xpr files
 !*.xpr
 #Include *.xml files for 2013.4 or earlier version
-!*.xml
+*.xml
 #########
 #Constraint files
 #########
@@ -150,4 +146,54 @@ Xilinx/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/
 !*.bmm
 !*.xmp
 
-# End of https://www.gitignore.io/api/xilinxvivado,alteraquartusii
+# intermediate build files
+**/artix_sdram_demo.tmp/
+**/artix_sdram_demo.tmp/*
+*.bgn
+*.bit
+*.bld
+*.cmd_log
+*.drc
+*.ll
+*.lso
+*.msd
+*.msk
+*.ncd
+*.ngc
+*.ngd
+*.ngr
+*.pad
+*.par
+*.pcf
+*.prj
+*.ptwx
+*.rbb
+*.rbd
+*.stx
+*.syr
+*.twr
+*.twx
+*.unroutes
+*.ut
+*.xpi
+*.xst
+*_bitgen.xwbt
+*_envsettings.html
+*_map.map
+*_map.mrp
+*_map.ngm
+*_map.xrpt
+*_ngdbuild.xrpt
+*_pad.csv
+*_pad.txt
+*_par.xrpt
+*_summary.html
+*_summary.xml
+*_usage.xml
+*_xst.xrpt
+par_usage_statistics.html
+usage_statistics_ext_xsim.xml
+usage_statistics_webtalk.html
+webtalk.log
+webtalk_pn.xml
+**/webtalk/

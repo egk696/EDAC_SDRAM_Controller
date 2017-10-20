@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DemoSDRAM_axi_crossbar_0_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_axi_crossbar_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="DemoSDRAM_s00_mmu_0_synth_1" LaunchDir="C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/DemoSDRAM_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="DemoSDRAM_axi_crossbar_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_s00_mmu_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Xilinx/artix_sdram_demo/artix_sdram_demo.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+		<Parent Id="DemoSDRAM_axi_crossbar_0_0_synth_1"/>
+		<Parent Id="DemoSDRAM_s00_mmu_0_synth_1"/>
+	</Run>
+</Runs>
+
