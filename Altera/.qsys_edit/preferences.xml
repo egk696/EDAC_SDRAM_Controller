@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="159" />
+   <irq preferredWidth="34" />
+   <inputclock preferredWidth="298" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project/Memory Interfaces and Controllers/SDRAM,Project/Memory Interfaces and Controllers,Project,Library" />
+ <window width="1920" height="1030" x="0" y="0" />
+ <hdlexample language="VHDL" />
+ <generation path="_PROJECT_NAME_" synthesis="VHDL" />
+</preferences>

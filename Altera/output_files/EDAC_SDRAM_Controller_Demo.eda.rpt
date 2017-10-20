@@ -1,0 +1,129 @@
+EDA Netlist Writer report for EDAC_SDRAM_Controller_Demo
+Thu Jul 20 15:43:08 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. Board-Level Settings
+  4. Board-Level Generated Files
+  5. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                                ;
++---------------------------------------+-----------------------------------+
+; EDA Netlist Writer Status             ; Failed - Thu Jul 20 15:43:08 2017 ;
+; Revision Name                         ; EDAC_SDRAM_Controller_Demo        ;
+; Top-level Entity Name                 ; EDAC_SDRAM_Controller_Demo        ;
+; Family                                ; Cyclone IV E                      ;
+; Board Signal Integrity Files Creation ; Successful                        ;
+; Board Timing Analysis Files Creation  ; Successful                        ;
+; Board Boundary Scan Files Creation    ; Successful                        ;
++---------------------------------------+-----------------------------------+
+
+
++-----------------------------------------+
+; Board-Level Settings                    ;
++-------------------------------+---------+
+; Option                        ; Setting ;
++-------------------------------+---------+
+; Board Signal Integrity Format ; HSPICE  ;
+; Board Timing Analysis Format  ; STAMP   ;
+; Board Boundary Scan Format    ; BSDL    ;
++-------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board-Level Generated Files                                                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                                                                                                             ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Signal Integrity                                                                                                                                                                                                      ;
+; Board Timing Analysis                                                                                                                                                                                                       ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_85c_board_slow.mod   ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_85c_board_slow.data  ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_0c_board_slow.mod    ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_0c_board_slow.data   ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_min_1200mv_0c_board_fast.mod  ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_min_1200mv_0c_board_fast.data ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_board.mod                     ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp/C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_board.data                    ;
+; Board Boundary Scan                                                                                                                                                                                                         ;
+;     C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/board/bsd/EP4CE115F29C7_pre.bsd                                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Thu Jul 20 15:43:02 2017
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off EDAC_SDRAM_Controller -c EDAC_SDRAM_Controller_Demo
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Error (204012): Can't generate netlist output files because the file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is an OpenCore Plus time-limited file. Remove the unlicensed cores or obtain a license for those OpenCore Plus time-limited IP cores used in the design. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is not available
+Error (204012): Can't generate netlist output files because the file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is an OpenCore Plus time-limited file. Remove the unlicensed cores or obtain a license for those OpenCore Plus time-limited IP cores used in the design. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is not available
+Error (204012): Can't generate netlist output files because the file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is an OpenCore Plus time-limited file. Remove the unlicensed cores or obtain a license for those OpenCore Plus time-limited IP cores used in the design. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is not available
+Info (199047): Generated files "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_85c_board_slow.mod" and "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_85c_board_slow.data"
+Info (199047): Generated files "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_0c_board_slow.mod" and "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_7_1200mv_0c_board_slow.data"
+Info (199047): Generated files "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_min_1200mv_0c_board_fast.mod" and "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_min_1200mv_0c_board_fast.data"
+Info (199047): Generated files "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_board.mod" and "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/timing/stamp//EDAC_SDRAM_Controller_Demo_board.data"
+Error (204012): Can't generate netlist output files because the file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is an OpenCore Plus time-limited file. Remove the unlicensed cores or obtain a license for those OpenCore Plus time-limited IP cores used in the design. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number.
+Error (204009): Can't generate netlist output files because the license for encrypted file "C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/EDAC_SDRAM_Controller_Demo/synthesis/submodules/EDAC_SDRAM_Controller_Demo_nios2_gen2_0_cpu.v" is not available
+Info: TOTAL BSCAN REGISTERS IS 540
+Info: TOTAL IO PAD COUNT IS 532
+Warning: New Pin Type UDCLK
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Warning: New Pin Type Dedicated Clock
+Info: EP4CE115F29 has 540 JTAG SEQUENCE AVAILABLE
+Info (199065): Generated Boundary-Scan Description Language output file C:/Users/egk69/Documents/Development/EDAC_SDRAM_Controller/Altera/board/bsd/EP4CE115F29C7_pre.bsd for board-level analysis
+Error: Quartus Prime EDA Netlist Writer was unsuccessful. 8 errors, 19 warnings
+    Error: Peak virtual memory: 620 megabytes
+    Error: Processing ended: Thu Jul 20 15:43:08 2017
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:06
+
+

@@ -5,6 +5,9 @@
 !*/
 !.gitignore
 !*.md
+**/webtalk/
+webtalk/
+Xilinx/artix_sdram_demo/artix_sdram_demo.tmp/sdram_ctrl_tmr_avalon_v1_0_project/sdram_ctrl_tmr_avalon_v1_0_project.sim/sim_1/behav/xsim.dir/sdram_ctrl_tmr_avs_interface_behav/webtalk/
 
 # Created by https://www.gitignore.io/api/xilinxvivado,alteraquartusii
 
@@ -73,7 +76,7 @@
 ##	This is an example .gitignore file for Vivado, please treat it as an example as 
 ##	it might not be complete. In addition, XAPP 1165 should be followed.
 #########################################################################################################
-*/*.tmp/*
+
 ###########################################################################
 ##	VIVADO
 ###########################################################################
