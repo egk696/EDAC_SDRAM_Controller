@@ -1,6 +1,6 @@
 # EDAC SDRAM Controller
 
-This repository hosts the code developed that implementes the proposed SEU mitigation technique presented in:
+This repository hosts the developed code that implements the proposed SEU mitigation technique presented in:
 
 _E.Kyriakakis, K. Ngo and J.Öberg, "Mitigating Single-Event Upsets in COTS SDRAM using an EDAC SDRAM Controller", In proceeedings of NORCAS-2017, Linköping, Sweden._
 
